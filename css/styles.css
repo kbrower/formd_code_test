@@ -1,18 +1,18 @@
 html {
   overflow-y: auto;
 }
+
 body {
   overflow-x: hidden;
-  background: #222222;
+  background: #ffffff;
 }
-a,
-a:hover,
-a:active,
-a:visited {
+
+a, a:hover, a:active, a:visited {
   text-decoration: none;
   color: #0b4d84;
   cursor: pointer;
 }
+
 .unselectable {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -21,70 +21,50 @@ a:visited {
   -ms-user-select: none;
   user-select: none;
 }
-input,
-textarea,
-body {
-  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 150%;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.googleFont,
-.lightBlueButton,
-.lightboxButton {
-  font-family: 'soleil', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  font-style: normal !important;
-}
-.gigantic {
-  font-size: 220%;
-}
-h1,
-.giant {
-  font-size: 170%;
-}
-h2,
-.almostGiant {
-  font-size: 140%;
-}
-h3,
-.moreGiant {
-  font-size: 130%;
-}
-h4,
-.largest {
-  font-size: 120%;
-}
-h5,
-.larger {
-  font-size: 110%;
-}
-h6,
-.smaller {
-  font-size: 90%;
-}
-.smallest {
-  font-size: 85%;
-}
-.tiny {
-  font-size: 75%;
-}
-ul,
-ol,
-li {
-  list-style: none;
-}
+
 .container {
-  width: 980px;
-  margin: 0 auto;
+  margin: 20px;
   position: relative;
 }
 
 table {
+  margin-bottom: 50px;
+}
+
+table.list {
+  table-layout: fixed;
+  width: 500px;
+}
+
+table.list td {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 3px 0;
+}
+
+table.list td:first-child {
+  width: 200px;
+  color: #666;
+}
+
+table.grid {
   width: 100%;
+}
+
+table.grid th, table.grid td {
+  border: 1px solid #333;
+  padding: 5px 10px;
+  text-align: left;
+}
+
+table.grid th {
+  background: #666;
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+table.grid tr:nth-child(2n) {
+  background: #efefef;
 }

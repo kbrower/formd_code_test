@@ -6,8 +6,8 @@
   <title>for[MD] Code Test</title> 
   <meta name="description" content="Just a test bro!!"> 
 
-  <link rel="stylesheet" type='text/css' href="/css/reset.css">
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
 
 
 </head>
@@ -17,7 +17,9 @@
   <!--[if IE 9 ]>    <body class="ie ie9"> <![endif]-->
   <!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
  
-  <?= $content ?> 
+  <div class="container">
+    <?= $content ?> 
+  </div>
 
 </body> 
 </html>
